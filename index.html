@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightGray: "#F2F2F2",
+              cultured: "#FAFAFA",
+              siennaRed: "#EA5454",
+              turquoise: "#44D3D2",
+              sandyOrange: "#FCAE4A",
+              cornflowerBlue: "#549EF2",
+              gunmetal: "#4D4F62",
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+            boxShadow: {
+              customBlur: "0px 15px 30px -11px rgba(131, 166, 210, 0.5)", // Custom shadow with 4px blur
+            },
+          },
+        },
+      };
+    </script>
+    <title class="">Four card feature section</title>
+  </head>
+  <body
+    class="min-h-screen flex flex-col items-center justify-center bg-lightGray antialiased"
+  >
+    <main
+      class="bg-cultured w-[23.4375rem] lg:w-[90rem] px-8 lg:grid lg:grid-rows-[fit-content_fit-content] lg:px-[10.3125rem] lg:place-items-center"
+    >
+      <section
+        class="mt-[5.3125rem] text-center gap-y-4 flex flex-col lg:w-[33.75rem]"
+      >
+        <header>
+          <h3
+            class="text-2xl lg:text-4xl font-extralight text-gunmetal tracking-[.0106rem]"
+          >
+            Reliable, efficient delivery
+          </h3>
+          <h1
+            class="text-2xl lg:text-4xl font-semibold text-gunmetal tracking-[.0106rem]"
+          >
+            Powered by Technology
+          </h1>
+        </header>
+        <p
+          class="text-[.9375rem] font-normal tracking-[.0063rem] leading-[1.5625rem] text-gunmetal opacity-50 mb-[4.75rem] lg:mb-16"
+        >
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </section>
+      <section
+        class="flex flex-col gap-y-[1.5625rem] mb-[4.875rem] lg:grid lg:grid-cols-3 lg:items-center lg:gap-[1.875rem]"
+      >
+        <div class="rounded-t-lg border-t-4 border-t-turquoise">
+          <div class="bg-white p-7 rounded-b-lg shadow-customBlur">
+            <h1 class="text-xl font-semibold text-gunmetal">Supervisor</h1>
+            <p
+              class="text-[.8125rem] leading-[1.4375rem] tracking-[.0056rem] text-gunmetal opacity-50 mb-[2.0625rem]"
+            >
+              Monitors activity to identify project roadblocks
+            </p>
+            <img class="ml-auto" src="images/icon-supervisor.svg" alt="" />
+          </div>
+        </div>
+        <div class="lg:grid lg:gap-[1.875rem]">
+          <div class="rounded-t-lg border-t-4 border-t-siennaRed">
+            <div class="bg-white p-7 rounded-b-lg shadow-customBlur">
+              <h1 class="text-xl font-semibold text-gunmetal">Team Builder</h1>
+              <p
+                class="text-[.8125rem] leading-[1.4375rem] tracking-[.0056rem] text-gunmetal opacity-50 mb-[2.0625rem]"
+              >
+                Scans our talent network to create the optimal team for your
+                project
+              </p>
+              <img class="ml-auto" src="images/icon-team-builder.svg" alt="" />
+            </div>
+          </div>
+          <div class="rounded-t-lg border-t-4 border-t-sandyOrange">
+            <div class="bg-white p-7 rounded-b-lg shadow-customBlur">
+              <h1 class="text-xl font-semibold text-gunmetal">Karma</h1>
+              <p
+                class="text-[.8125rem] leading-[1.4375rem] tracking-[.0056rem] text-gunmetal opacity-50 mb-[2.0625rem]"
+              >
+                Regularly evaluates our talent to ensure quality
+              </p>
+              <img class="ml-auto" src="images/icon-karma.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="rounded-t-lg border-t-4 border-t-cornflowerBlue">
+          <div class="bg-white p-7 rounded-b-lg shadow-customBlur">
+            <h1 class="text-xl font-semibold text-gunmetal">Calculator</h1>
+            <p
+              class="text-[.8125rem] leading-[1.4375rem] tracking-[.0056rem] text-gunmetal opacity-50 mb-[2.0625rem]"
+            >
+              Uses data from past projects to provide better delivery estimates
+            </p>
+            <img class="ml-auto" src="images/icon-calculator.svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
